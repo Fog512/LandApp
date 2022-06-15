@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="5dp"
+    app:cardCornerRadius="5dp"
+    app:contentPadding="5dp"
+    app:cardElevation="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginEnd="5dp" >
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageViewerUser"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pic1"
+                app:shapeAppearanceOverlay="@style/cut_corner" />
+
+            <ProgressBar
+                android:visibility="invisible"
+                android:id="@+id/progressBarImageUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/titleTvProjectUser"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/relative"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="bds title" />
+
+        <TextView
+            android:drawableStart="@drawable/ic_baseline_location_on_24"
+            android:id="@+id/desTvProjectUser"
+            style="@style/TextAppearance.AppCompat.Body2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleTvProjectUser"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/relative"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="4"
+            android:text="the description about book" />
+
+
+        <TextView
+            android:id="@+id/dateTvUser"
+            style="@style/TextAppearance.AppCompat.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="dd/MM/yyyy"  />
+
+        <TextView
+            android:id="@+id/priceTvProjectUser"
+            style="@style/TextAppearance.AppCompat.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@id/relative"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="price"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

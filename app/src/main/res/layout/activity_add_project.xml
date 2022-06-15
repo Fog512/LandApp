@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back03"
+    tools:context=".ui.activity.AddProjectActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar01"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/shape_toolbar">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:layout_margin="10dp"
+            android:id="@+id/imBack" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iconIv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/pic1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iconIv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Thêm dự án BĐS mới"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="225dp"
+        android:textColorHint="#AAAAAA"
+        app:endIconMode="clear_text"
+        app:hintEnabled="false"
+        android:id="@+id/edt1" >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_edittext_01"
+            android:id="@+id/titleEdt"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:hint="Tên dự án"
+            android:inputType="textPersonName|textCapSentences"
+            android:drawableStart="@drawable/ic_baseline_add_home_24" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        app:endIconMode="clear_text"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="5dp"
+        android:textColorHint="#AAAAAA"
+        app:hintEnabled="false"
+        android:id="@+id/edt2"
+        android:layout_below="@id/edt1">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_edittext_01"
+            android:id="@+id/desEdt"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:hint="Mô tả dự án"
+            android:inputType="textPersonName|textCapSentences"
+            android:drawableStart="@drawable/ic_baseline_not_listed_location_24" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        app:endIconMode="clear_text"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="5dp"
+        android:textColorHint="#AAAAAA"
+        app:hintEnabled="false"
+        android:id="@+id/edt3"
+        android:layout_below="@id/edt2">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_edittext_01"
+            android:id="@+id/costEdt"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:hint="Giá dự án"
+            android:inputType="textPersonName|textCapSentences"
+            android:drawableStart="@drawable/ic_baseline_attach_money_24" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="5dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:id="@+id/edt4"
+        android:hint="Lựa hình kinh doanh"
+        android:layout_below="@id/edt3">
+
+        <AutoCompleteTextView
+            android:textSize="14sp"
+            android:id="@+id/businessEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="5dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:id="@+id/edt5"
+        android:hint="Loại dự án"
+        android:layout_below="@id/edt4">
+
+        <AutoCompleteTextView
+            android:textSize="14sp"
+            android:id="@+id/categoryEdt"
+            android:inputType="none"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:id="@+id/ll"
+        android:orientation="horizontal"
+        android:layout_below="@id/edt5">
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/image1"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/ic_baseline_add_photo_alternate_24" />
+
+        <ImageView
+            android:layout_marginStart="20dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="5dp"
+            android:visibility="invisible"
+            android:id="@+id/image2"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/ic_baseline_add_photo_alternate_24" />
+
+        <ImageView
+            android:layout_marginStart="20dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="5dp"
+            android:visibility="invisible"
+            android:id="@+id/image3"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/ic_baseline_add_photo_alternate_24" />
+    </LinearLayout>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/smBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/shape_button_01"
+        android:text="Đăng Tải" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:visibility="invisible"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

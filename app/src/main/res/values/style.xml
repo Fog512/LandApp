@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="cut_corner">
+        <item name="cornerSize">20dp</item>
+        <item name="cornerFamily">cut</item>
+    </style>
+
+    <style name="rounded_corner">
+        <item name="cornerSize">20dp</item>
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">#939393</item>
+        <item name="colorControlActivated">#FFC108</item>
+    </style>
+</resources>

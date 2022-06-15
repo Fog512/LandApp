@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1001315398532",
+    "project_id": "land-a9a37",
+    "storage_bucket": "land-a9a37.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1001315398532:android:5a82a815f92b916bbea3d1",
+        "android_client_info": {
+          "package_name": "com.example.landapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1001315398532-9k1mgkfi9m2mean1qe2034vkhn338m4o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCd6OvxFaJ4eI8buMikw4Ui9xCZSNIdsM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1001315398532-9k1mgkfi9m2mean1qe2034vkhn338m4o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

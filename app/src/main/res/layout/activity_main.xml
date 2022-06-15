@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back03"
+    android:padding="20dp"
+    tools:context=".ui.activity.MainActivity">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:id="@+id/image"
+        android:src="@drawable/logo"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iconIv"
+        android:layout_centerHorizontal="true"
+        android:text="Green Land"
+        android:textColor="@color/green"
+        android:textSize="16sp"
+        android:layout_marginTop="250dp"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginBtn"
+        android:text="Login"
+        android:background="@drawable/shape_button_01"
+        android:textColor="@color/white"
+        android:layout_above="@id/skipBtn"
+        android:layout_marginBottom="12dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/skipBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape_button_02"
+        android:text="Continue Without Login"
+        android:textColor="#30452A" />
+
+</RelativeLayout>
